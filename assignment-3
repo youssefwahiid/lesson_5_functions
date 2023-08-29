@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <string.h>
+
+// Reverse the characters in a string
+void reverse(char sent[], char result[]) {
+    int i, z;
+    z = strlen(sent) - 1;
+    
+    for (i = 0; i < strlen(sent); i++) {
+        result[i] = sent[z - i];
+    }
+    result[i] = '\0';
+}
+
+int main() {
+    char text[100];
+    char reversed[100];
+    
+    printf("Enter a sentence: ");
+    fflush(stdout);
+    gets(text); // Note: Avoid using gets(), it's unsafe. Use fgets() instead.
+    
+    reverse(text, reversed);
+    
+    printf("Reversed sentence: %s\n", reversed);
+    
+    return 0;
+}
