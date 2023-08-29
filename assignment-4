@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int power(int x, int y) {
+	if (y == 0) {
+		return 1;
+	} else {
+		return x * power(x, y - 1);
+	}
+}
+
+int main() {
+	int b, p;
+
+	printf("Enter base number : ");
+	fflush(stdout);
+	scanf("%d", &b);
+	printf("Enter power number (positive): ");
+	fflush(stdout);
+	scanf("%d", &p);
+
+	  int result = power(b, p);
+	    printf("result of %d ^ %d = %d\n", b, p, result);
+	return 0;
+}
