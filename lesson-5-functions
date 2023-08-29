@@ -1,0 +1,8 @@
+#include <stdio.h>
+#include <string.h>
+int main() {
+
+  printf("  اسف علي الطريقه الغير منظمه لسا بتعلم ازاي اتعامل مع GitHub :) :) "
+     
+    return 0;
+}
